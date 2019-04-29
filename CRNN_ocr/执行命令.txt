@@ -1,0 +1,3 @@
+python crnn_main.py --trainroot to_lmdb/lmdb/train_lmdb --valroot to_lmdb/lmdb/test_lmdb --cuda
+
+python crnn_main.py --s_trainroot to_lmdb/split_lmdb/s_train_lmdb --s_valroot to_lmdb/split_lmdb/s_test_lmdb --m_trainroot to_lmdb/split_lmdb/m_train_lmdb --m_valroot to_lmdb/split_lmdb/m_test_lmdb --l_trainroot to_lmdb/split_lmdb/l_train_lmdb --l_valroot to_lmdb/split_lmdb/l_test_lmdb --cuda
