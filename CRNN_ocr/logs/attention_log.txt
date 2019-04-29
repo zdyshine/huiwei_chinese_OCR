@@ -1,0 +1,7 @@
+63: Test loss: 0.461560, accuray: 0.513125
+
+62: Test loss: 0.445492, accuray: 0.530000
+
+61: Test loss: 0.458320, accuray: 0.519375
+
+49: Test loss: 0.425629, accuray: 0.506250
