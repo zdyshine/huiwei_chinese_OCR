@@ -1,0 +1,30 @@
+python multigpu_train.py --gpu_list=0 --input_size=512 --batch_size_per_gpu=14 --checkpoint_path=/media/zdy/新加卷/DYng_Z/2-text_detect/tmp_model/ \
+--text_scale=512 --training_data_path=/training_samples/ --geometry=RBOX --learning_rate=0.0001 --num_readers=24 \
+--pretrained_model_path=/tmp/resnet_v1_50.ckpt
+
+
+python multigpu_train.py --gpu_list=0 --input_size=512 --batch_size_per_gpu=14 --checkpoint_path=/media/zdy/新加卷/DYng_Z/2-text_detect/tem_model/ \
+--text_scale=512 --training_data_path=training_samples/ --geometry=RBOX --learning_rate=0.0001 --num_readers=24 \
+--pretrained_model_path=resnet_v1_50.ckpt
+
+#resnet 50
+python multigpu_train.py --gpu_list=0 --input_size=512 --batch_size_per_gpu=14 --checkpoint_path=/media/zdy/新加卷/DYng_Z/2-text_detect/tmp_model/ \
+--text_scale=512 --training_data_path=/media/zdy/新加卷/DYng_Z/2-text_detect/data/train_Image/ --geometry=RBOX --learning_rate=0.0001 --num_readers=24
+
+
+#resnet101
+python multigpu_train.py --gpu_list=0 --input_size=640 --batch_size_per_gpu=8 --checkpoint_path=/media/zdy/新加卷/DYng_Z/2-text_detect/tmp_model/ \
+--text_scale=512 --training_data_path=/media/zdy/新加卷/DYng_Z/2-text_detect/data/train_Image/ --geometry=RBOX --learning_rate=0.0001 --num_readers=24 --pretrained_model_path=resnet_v1_101.ckpt
+
+
+#resnet101 多尺度训练
+python multigpu_train.py --gpu_list=0 --input_size=512 --batch_size_per_gpu=8 --checkpoint_path=/media/zdy/新加卷/DYng_Z/2-text_detect/tmp_model/ \
+--text_scale=512 --training_data_path=/media/zdy/新加卷/DYng_Z/2-text_detect/data/train_Image/ --geometry=RBOX --learning_rate=0.0001 --num_readers=24 --pretrained_model_path=resnet_v1_101.ckpt
+
+#resnet101 网络多尺度
+python multigpu_train.py --gpu_list=0 --input_size=512 --batch_size_per_gpu=2 --checkpoint_path=/media/zdy/新加卷/DYng_Z/2-text_detect/tmp_model/ \
+--text_scale=512 --training_data_path=/media/zdy/新加卷/DYng_Z/2-text_detect/data/train_Image/ --geometry=RBOX --learning_rate=0.0001 --num_readers=24 --pretrained_model_path=resnet_v1_101.ckpt
+
+#resume
+python multigpu_train.py --gpu_list=0 --input_size=512 --batch_size_per_gpu=2 --checkpoint_path=/media/zdy/新加卷/DYng_Z/2-text_detect/tmp_model/ \
+--text_scale=512 --training_data_path=/media/zdy/新加卷/DYng_Z/2-text_detect/data/train_Image/ --geometry=RBOX --learning_rate=0.0001 --num_readers=24 --pretrained_model_path=resnet_v1_101.ckpt
