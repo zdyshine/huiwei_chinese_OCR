@@ -30,3 +30,6 @@
 ## 数据增强
        数据增强很重要！！！  
        本次使用了：GaussianBlur，sharpen，Affine，GaussianNoise，Add，Multiply，contrastNorm-alization，PiecwiseAffine  
+## 数据格式
+       比赛方提供的数据中，文字方向是竖直排版的，与常见的水平文字不同，所以在识别是需要先把数据选择90度。
+       检测时，数据格式为img/img1.jpg, img1.txt, img2.jpg,img2.txt即：每个图片以及对应的文字和文字框信息。
